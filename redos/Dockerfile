@@ -23,7 +23,7 @@ VOLUME ["/tmp/kafka-logs"]
 
 EXPOSE 9092 2181
 
-ENTRYPOINT ["/kafka-entrypoint.sh"]
-CMD ["kafka-server-start.sh", "config/server.properties"]
+ENTRYPOINT ["bin/kafka-server-start.sh"]
+CMD ["config/server.properties"]
 
 # HEALTHCHECK --interval=5s --timeout=2s --retries=5 CMD bin/health.sh
