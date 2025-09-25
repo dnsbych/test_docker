@@ -1,0 +1,4 @@
+docker build -t kafka-alpine:v1 .
+docker build -t kafka-redos:v1 .
+
+docker-compose up
